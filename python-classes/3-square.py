@@ -11,9 +11,11 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
 
+    @size.getter
     def size(self):
         return self.__size
 
+    @size.setter
     def size(self, value):
         self.__size = value
 
